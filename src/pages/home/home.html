@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contactos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+      <button ion-item *ngFor="let item of items" (click)="goDetail(item.id)">
+        {{ item.name }}
+      </button>  
+    </ion-list>
+    <button ion-button block (click) = 'createItem()'>Crear Item</button>
+    
+</ion-content>
